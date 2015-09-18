@@ -1,5 +1,6 @@
-public class Solution {
-    public String addBinary(String a, String b) {
+//二进制加法
+
+public String addBinary(String a, String b) {
         int numA = a.length();
         int numB = b.length();
         int i = a.length()-1;
@@ -47,4 +48,3 @@ public class Solution {
             result = "1" + result;
         return result;
     }
-}
