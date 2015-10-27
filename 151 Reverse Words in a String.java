@@ -1,4 +1,5 @@
 //将字符串中的单词颠倒一下
+//O(1) space解法：先颠倒整个句子，再分别颠倒每个词
 
 public String reverseWords(String s) {
         if(s.length() == 0)
