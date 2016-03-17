@@ -1,7 +1,9 @@
+//https://leetcode.com/problems/add-digits/
 //数字各位相加直到小于10
 //有些慢，有更快的方法
 /*
-答案简化版：(num - 1) % 9 + 1
+公式介绍：https://en.wikipedia.org/wiki/Digital_root
+答案简化版，也可应用于负数：(num - 1) % 9 + 1
 证明：
 假设对于三位数abc=100*a+10*b+c--减去9的倍数-->a+b+c
 a+b+c mod 9 即为abc mod 9，只需要计算原数字除以9所得的余数（还有特殊情况 9和0）
