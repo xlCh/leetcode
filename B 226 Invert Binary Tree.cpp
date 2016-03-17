@@ -9,3 +9,14 @@ TreeNode* invertTree(TreeNode* root) {
         }
         return root;
     }
+/*
+更短一些 java写法
+public TreeNode invertTree(TreeNode root) {
+        if(root == null)
+            return null;
+        TreeNode temp = invertTree(root.left);
+        root.left = invertTree(root.right);
+        root.right = temp;
+        return root;
+    }
+*/
