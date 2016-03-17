@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/excel-sheet-column-number/
 //输出excel中列代表的数字（例如A=1,AA=27...）
 
 int titleToNumber(string s) {
