@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/merge-two-sorted-lists/
 //合并两个有序链表
-//后面步骤的更佳写法：if(ln1) l3->next=ln1;
+//后面步骤的更佳写法：if(ln1) l3->next=ln1;【注意】
 
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         ListNode * l3head = new ListNode(0);
@@ -32,4 +33,22 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
             l3 = l3->next;
         }
         return l3head->next;
+    }
+
+//递归解法 不是自己想的 注意
+public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode start = null;
+        if(l1 == null)
+            return l2;
+        if(l2 == null)
+            return l1;
+        if(l1.val < l2.val) {
+            start = l1;
+            start.next = mergeTwoLists(l1.next, l2);
+        }
+        else {
+            start = l2;
+            start.next = mergeTwoLists(l1, l2.next);
+        }
+        return start;
     }
