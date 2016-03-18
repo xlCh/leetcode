@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/climbing-stairs/
 //爬楼梯，一次爬1或2节，求总共可能的数量
-
+//可简化为O(1) space 无需数组
 int climbStairs(int n) {
         vector<int> dp(n, 0);
         if(n == 1)
