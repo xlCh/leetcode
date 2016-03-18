@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/house-robber/
 //盗窃问题 动态规划，不能盗窃相邻的房间，求最大价值
-//可以简化为O(1) space
+//可以简化为O(1) space 设置 preprevalue prevalue value
 
 public int rob(int[] nums) {
         if(nums.length == 0)
