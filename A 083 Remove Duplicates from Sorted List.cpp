@@ -1,4 +1,6 @@
+//https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 //从链表中移除重复元素
+//变量还可以再节省 只需要head和originhead
 
 ListNode* deleteDuplicates(ListNode* head) {
         if(head == NULL)
