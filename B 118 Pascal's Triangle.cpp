@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/pascals-triangle/
 //Pascal's Triangle 传入行数，返回如下格式
 //[
 //     [1],
@@ -34,4 +35,29 @@ vector<vector<int>> generate(int numRows) {
             }
         }
         return outerVec;
+    }
+
+//JAVA代码 可优化几行
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        if(numRows < 1)
+            return result;
+        List<Integer> first = new ArrayList<Integer>();
+        first.add(1);
+        result.add(first);
+        for(int i=1; i<numRows; i++) {
+            result.add(generateNext(result.get(i-1)));
+        }
+        return result;
+    }
+    
+    public List<Integer> generateNext(List<Integer> now) {
+        List<Integer> next = new ArrayList<Integer>();
+        next.add(now.get(0));//可放入循环 直接add 1
+        int nowSize = now.size();
+        for(int i=1; i<nowSize; i++) {
+            next.add(now.get(i) + now.get(i-1));
+        }
+        next.add(now.get(nowSize-1)); //可放入循环 直接add 1
+        return next;
     }
