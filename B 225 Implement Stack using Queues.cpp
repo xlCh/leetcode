@@ -1,5 +1,11 @@
+//https://leetcode.com/submissions/detail/56711021/
 //使用队列实现堆栈
-//方法有点麻烦，有只使用一个队列的解法
+//方法有点麻烦，有只使用一个队列的解法https://leetcode.com/discuss/84233/solutions-about-which-utilizes-queue-others-utilize-queues
+//一个队列的解法是在每次push时都rotate一下队列
+//q.add(x);
+//    for(int i = 1; i < q.size(); i ++) { //rotate the queue to make the tail be the head
+//        q.add(q.poll());
+//    }
 queue<int> qu1;
     queue<int> qu2;
     // Push element x onto stack.
