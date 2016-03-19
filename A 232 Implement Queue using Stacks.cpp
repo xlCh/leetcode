@@ -1,4 +1,6 @@
+//https://leetcode.com/problems/implement-queue-using-stacks/
 // 用两个栈实现一个队列
+// 还可以一个做push栈一个做pop栈
 stack<int> st1;
     stack<int> st2;
     // Push element x to the back of queue.
