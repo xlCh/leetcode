@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/valid-sudoku
 //判断数独是否符合规则（横、竖、九宫格）
 bool isValidSudoku(vector<vector<char>>& board) {
         int num3[9][9] = {0,0,0,0,0,0,0,0,0};
