@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/range-sum-query-immutable/
 //计算下标i到j的数字和
 
 public class NumArray {
