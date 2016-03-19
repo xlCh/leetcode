@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/bulls-and-cows
 //猜数字 返回mAnB
 //注意可能出现的多种情况
 
