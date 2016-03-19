@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/summary-ranges/
 //输出一串数字的范围，例如给出[0,1,2,4,5,7]，返回["0->2","4->5","7"]
 
 vector<string> summaryRanges(vector<int>& nums) {
