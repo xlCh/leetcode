@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 /*移除有序列表中的重复元素，返回最终长度
 本代码运行时间过长，discuss中找到一个运行时间较短的，直接在原空间上进行替换，并删除最后几个元素
 
@@ -20,4 +21,16 @@ int removeDuplicates(vector<int>& nums) {
             }
         }
         return length;
+    }
+//Java 更短更快的方法：
+public int removeDuplicates(int[] nums) {
+        int low = 0, fast = 0;
+        while(fast < nums.length) {
+            if(nums[fast] == nums[low])
+                fast++;
+            else {
+                nums[++low] = nums[fast];
+            }
+        }
+        return low+1;
     }
