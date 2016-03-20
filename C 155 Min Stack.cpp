@@ -1,5 +1,7 @@
+//https://leetcode.com/problems/min-stack/
 //Min Stack 比普通栈多一个返回最小值
-
+//维护最小值栈
+//更优化的解法：新建自定义链表数据结构 https://leetcode.com/discuss/77734/clean-6ms-java-solution
 class MinStack {
 public:
     private:
