@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/remove-linked-list-elements/
 //移除链表中所有指定值的节点
 ListNode* removeElements(ListNode* head, int val) {
         if(head == NULL)
@@ -23,4 +24,20 @@ ListNode* removeElements(ListNode* head, int val) {
                 temp = temp->next;
         }
         return head;
+    }
+
+//短一些并且快的方法 java
+public class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode preHead = new ListNode(0);
+        preHead.next = head;
+        ListNode temp = preHead;
+        while(temp.next != null) {
+            if(temp.next.val == val) {
+                temp.next = temp.next.next;
+            } else {
+                temp = temp.next;
+            }
+        }
+        return preHead.next;
     }
