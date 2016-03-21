@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 //移除从末尾数第N个节点
-//方法有点冗余 待改进
+//方法有点冗余 如果在head前再加一个node，则不需要这么多判定条件
 ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode * n1 = head;
         ListNode * n2 = head;
