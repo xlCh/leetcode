@@ -1,4 +1,8 @@
+//https://leetcode.com/problems/intersection-of-two-linked-lists/
 //找到两个链表的共同节点
+//另一种解法[巧妙!]：往复循环 A->B, B->A https://leetcode.com/discuss/88940/simple-c-solution-5-lines
+
+
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         int lengthA = 0, lengthB = 0;
         ListNode * a = headA;
