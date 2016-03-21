@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/word-pattern/
 //判断str是否符合pattern
 
 public boolean wordPattern(String pattern, String str) {
