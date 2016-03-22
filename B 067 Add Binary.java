@@ -1,4 +1,5 @@
-//二进制加法
+//https://leetcode.com/problems/add-binary/
+//二进制加法 不够简洁，参照https://leetcode.com/discuss/89453/3ms-java-simple-solution-using-stringbuilder
 
 public String addBinary(String a, String b) {
         int numA = a.length();
