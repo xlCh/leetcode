@@ -1,5 +1,6 @@
+//https://leetcode.com/submissions/detail/56978355/
 //计算小于n的非负整数中质数的个数
-
+//最快的方法：https://leetcode.com/discuss/81779/12-ms-java-solution-modified-from-the-hint-method-beats-99-95%25
 public int countPrimes(int n) {
         if(n < 2)
         	return 0;
