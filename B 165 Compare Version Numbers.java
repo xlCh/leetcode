@@ -1,5 +1,7 @@
+//https://leetcode.com/problems/compare-version-numbers/
 //版本比较
-
+//更快的方法 不需要借助java封的方法 https://leetcode.com/discuss/88446/1ms-ac-solution-in-java
+//注意split！！！
 public int compareVersion(String version1, String version2) {
         String[] version1s = version1.split("\\.");
         String[] version2s = version2.split("\\.");
