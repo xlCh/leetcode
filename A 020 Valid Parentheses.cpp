@@ -1,4 +1,6 @@
+//https://leetcode.com/problems/valid-parentheses/
 //判断括号的闭合情况：(), [], {}
+//可以用switch写的简洁一些
 bool isValid(string s) {
         stack<char> st;
         for(int i=0; i<s.length(); i++)
