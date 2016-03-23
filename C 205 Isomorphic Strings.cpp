@@ -1,5 +1,8 @@
+//https://leetcode.com/problems/isomorphic-strings/
 //判断一个单词是否能通过字符替换的方式用另一个代替
-//一开始采用map，但发现执行时间过长
+//方法还是慢了点，参考以下：
+//https://leetcode.com/discuss/83190/java-solution-beats-84%25-12-lines-in-total
+//https://leetcode.com/discuss/90578/5ms-java-solution
 bool isIsomorphic(string s, string t) {
         if(s.length() == 0)
             return true;
