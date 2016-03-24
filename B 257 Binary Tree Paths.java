@@ -1,5 +1,7 @@
+//https://leetcode.com/problems/binary-tree-paths/
 //输出二叉树的所有路径
 //递归写法
+//非递归写法可以写辅助类 https://leetcode.com/discuss/83013/my-java-non-recursion-solution-using-stack-and-wrapper
 
 private List<String> treePaths = new ArrayList<String>();
     
