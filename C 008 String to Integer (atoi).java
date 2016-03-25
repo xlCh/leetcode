@@ -1,6 +1,7 @@
+//https://leetcode.com/problems/string-to-integer-atoi/
 //字符串转int的实现
 //情况较多，代码冗余较严重，待改进。。
-
+//java最快的方法 https://leetcode.com/discuss/86651/my-nice-java-code-3ms
 int myAtoi(string str) {
         int startIndex;
         bool hasNum = false;
