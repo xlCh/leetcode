@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/count-and-say/
 //序列1, 11, 21, 1211 ... 
 //求序列第n个的值
 
