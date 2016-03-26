@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/missing-number/
 //nums为0~n数组（缺少一个元素），找出这个元素
-//位操作方法：result = nums.length 然后result ^= i, result ^= nums[i]
+//位操作方法：result = nums.length 然后result ^= i, result ^= nums[i] 其实也是single number的思想
 
 public int missingNumber(int[] nums) {
         int sum = 0;
