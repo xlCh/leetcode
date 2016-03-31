@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 //买卖股票的最大收益
 //其实不需要这样做，只需要一个for循环遍历，累加prices[i]>prices[i-1]的情况即可
 
@@ -16,3 +17,12 @@ public int maxProfit(int[] prices) {
 		}
 		return profit;
 	}
+
+public int maxProfit(int[] prices) {
+        int result = 0;
+        for(int i=1; i<prices.length; i++) {
+            if(prices[i] > prices[i-1])
+                result += (prices[i] - prices[i-1]);
+        }
+        return result;
+    }
