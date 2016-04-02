@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 //寻找有序数组rotate以后的最小值
 
 public int findMin(int[] nums) {
@@ -16,3 +17,19 @@ public int findMin(int[] nums) {
         }
         return nums[low];
     }
+
+public int findMin(int[] nums) {
+        if(nums.length == 0)
+            return 0;
+        int low = 0, high = nums.length - 1;
+        int medium = low + (high - low) / 2;
+        while(low < high - 1) {
+            if(nums[medium] < nums[high]) {
+                high = medium;
+            else if(nums[medium] > nums[low]) 
+                low = medium + 1;
+            medium = low + (high - low) / 2;
+        }
+        return (low+1<nums.length && nums[low+1]<nums[low]) ? nums[low+1] : nums[low];
+    }
+}
