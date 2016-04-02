@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 //         1
 //       /  \
 //      2    3
@@ -11,7 +12,7 @@
 //      2 -> 3 -> NULL
 //     / \  / \
 //    4->5->6->7 -> NULL
-
+//这种效率太低，一种最快的方法，链了下一层再遍历：https://leetcode.com/discuss/87477/share-my-loop-java-1ms-solution-easy-understand
 public void connect(TreeLinkNode root) {
         if(root == null)
             return;
