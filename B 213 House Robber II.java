@@ -1,4 +1,5 @@
-//盗窃，所有房子形成一个环
+//https://leetcode.com/submissions/detail/58117918/
+//盗窃，所有房子形成一个环，基本都是这个做法
 
 public int rob(int[] nums) {
         if(nums.length == 0)
