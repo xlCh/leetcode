@@ -1,4 +1,5 @@
-//三角从上到下和的最小值
+//https://leetcode.com/problems/triangle/
+//三角从上到下和的最小值 注意是对称的三角
 
 public int minimumTotal(List<List<Integer>> triangle) {
         int rows = triangle.size();
