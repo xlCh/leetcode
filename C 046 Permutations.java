@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/permutations/
 //数组排列的所有情况
 
 public class Solution {
@@ -25,7 +26,7 @@ public class Solution {
         }
     }
 }
-//https://leetcode.com/problems/permutations/
+
 //更快一点的方法
 public class Solution {
     
