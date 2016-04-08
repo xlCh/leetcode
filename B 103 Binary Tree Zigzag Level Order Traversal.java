@@ -1,6 +1,7 @@
 //树的宽度优先遍历（Z形遍历）
 //把普通BFS的队列变成栈即可 注意压栈顺序
-
+//使用一个队列就够 https://leetcode.com/discuss/95257/easy-to-understand-bfs-no-list-reverse
+//递归解法，边递归边存结果（最快）https://leetcode.com/discuss/87843/share-my-dfs-java-solution-beat-97%25-easy-to-understand
 public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> levels = new ArrayList<List<Integer>>();
         if(root == null)
