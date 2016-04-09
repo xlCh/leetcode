@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/search-a-2d-matrix/
 //查找矩阵 二分查找
+//代码超精炼的方法：https://leetcode.com/discuss/88121/safe-binary-search-implementation
 
 public boolean searchMatrix(int[][] matrix, int target) {
         int low = 0, high = matrix.length-1;
