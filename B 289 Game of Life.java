@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/game-of-life/
 //康威生存游戏
 
 //代码过长，有短一点的解法：
