@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 //根据前序和中序构造二叉树 递归解法
-
+//非递归解法：https://leetcode.com/discuss/84066/share-my-20-line-o-n-iterative-java-code-with-comments
 public class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         int length = preorder.length;
@@ -21,6 +22,18 @@ public class Solution {
                 break;
             }
         }
+        /* 改成这样会快很多
+        for(int i=istart, j=iend; i<=j; i++, j--) {
+			if(inorder[i] == preorder[pstart]) {
+				inorderIndex = i;
+				break;
+			}
+			if(inorder[j] == preorder[pstart]) {
+				inorderIndex = j;
+				break;
+			}
+		}
+        */
         root.left = buildSubTree(preorder, inorder, preStart+1, preStart+rootIndex-inStart, inStart, rootIndex-1);
         root.right = buildSubTree(preorder, inorder, preStart+rootIndex-inStart+1, preEnd, rootIndex+1, inEnd);
         return root;
