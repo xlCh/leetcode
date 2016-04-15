@@ -1,5 +1,7 @@
+//https://leetcode.com/problems/binary-tree-right-side-view/
 //从右边看二叉树，返回从上到下的List<Integer>
-
+//递归解法 注意从右DFS https://leetcode.com/discuss/95672/java-recursion-solution-beats-89%25-easy-to-understand
+//非递归解法 一个队列 https://leetcode.com/discuss/86391/sharing-solution-iterative-bfs-using-queue-documented-code
 public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
         if(root == null)
