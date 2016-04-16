@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/add-two-numbers/
 //两个数相加 求和 链表形式
-
+//找出长的list并直接操作这个list 会更快 https://leetcode.com/discuss/96766/my-java-solution-3ms-beats-98-68%25-of-java-submission
 public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if(l1 == null)
             return null;
