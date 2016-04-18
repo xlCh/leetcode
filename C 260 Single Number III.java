@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/single-number-iii/
 //返回数组中两个只出现一次的数（其余均出现两次）
 
 public int[] singleNumber(int[] nums) {
@@ -5,7 +6,7 @@ public int[] singleNumber(int[] nums) {
         for(int num : nums) {
             xXORy ^= num;
         }
-        //得到x和y最小的不同位
+        //得到x和y最小的不同位 或xXORy & (~xXORy+1)
         int diff = xXORy & (~(xXORy-1));
         int x = 0;
         for(int num : nums) {
