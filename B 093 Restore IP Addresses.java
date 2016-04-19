@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/restore-ip-addresses/
 //给出ip地址的各种可能
-
+//哈哈哈哈不错的解法 https://leetcode.com/discuss/88736/who-can-beat-this-code
 public class Solution {
     private List<String> result = new ArrayList<String>();
     
@@ -30,3 +31,26 @@ public class Solution {
     
     
 }
+
+//略有不同
+    List<String> result = new ArrayList<String>();
+    public List<String> restoreIpAddresses(String s) {
+        restore(s, "", 0, 4);
+        return result;
+    }
+    
+    public void restore(String s, String already, int start, int remain) {
+        if(remain == 0 && start >= s.length()) {
+            result.add(already.substring(0, already.length()-1));
+            return;
+        }
+        else if(remain == 0 || start >= s.length()) {
+            return;
+        }
+        for(int i=1; i<=3 && start+i <=s.length(); i++) {
+            String subNum = s.substring(start, start+i);
+            if(Integer.valueOf(subNum) > 255 || (i != 1 && s.charAt(start) == '0'))
+                return;
+            restore(s, already+subNum + ".", start+i, remain-1);
+        }
+    }
