@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/single-number-ii/
 //其他数字均出现3次 找出仅出现一次的数字
 
 public int singleNumber(int[] nums) {
@@ -11,5 +12,20 @@ public int singleNumber(int[] nums) {
         int result = 0;
         for(int i=0; i<32; i++)
             result |= bits[i] << i;
+        return result;
+    }
+
+//更易懂
+    public int singleNumber(int[] nums) {
+        int result = 0;
+        for(int i=0; i<32; i++) {
+            int mask = 1 << i, count = 0;
+            for(int num : nums) {
+                count += (num & mask);
+            }
+            if(count % 3 != 0) {
+                result |= mask;
+            }
+        }
         return result;
     }
