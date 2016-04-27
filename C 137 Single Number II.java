@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/single-number-ii/
 //其他数字均出现3次 找出仅出现一次的数字
-
+//更简便但不易懂 https://leetcode.com/discuss/44345/java-bit-manipulation-solution
 public int singleNumber(int[] nums) {
         int[] bits = new int[32];
         for(int i=0; i<32; i++) {
