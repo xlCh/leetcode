@@ -1,5 +1,8 @@
+//https://leetcode.com/problems/3sum/
 //找出数组中所有和为0的三个数
-
+//注意可能重复的情况
+//https://leetcode.com/discuss/97292/6ms-99-92%25-hashmaps-and-no-sorting-but-may-require-lot-of-space
+//可用do while https://leetcode.com/discuss/96528/java-solution-beats-92-68%25
  public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
