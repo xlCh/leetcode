@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/minimum-size-subarray-sum/
 //和为s的最短子串长度
-
+//O(nlogn)解法  https://leetcode.com/discuss/85089/c-o-n-and-o-nlogn-code-easy-to-understand
 public int minSubArrayLen(int s, int[] nums) {
         if(nums.length == 0)
             return 0;
@@ -19,4 +20,24 @@ public int minSubArrayLen(int s, int[] nums) {
             currentSum -= nums[slow++];
         }
         return minLen;
+    }
+
+public int minSubArrayLen(int s, int[] nums) {
+        int slow = 0, fast = 0, sum = 0;
+        while(fast < nums.length && sum+nums[fast] < s) {
+            sum += nums[fast++];
+        }
+        if(fast == nums.length && sum < s)
+            return 0;
+        int result = fast - slow + 1;
+        for(int i=fast; i<nums.length; i++) {
+            sum += nums[i];
+            while(sum-nums[slow] >= s) {
+                sum -= nums[slow++];
+            }
+            if(i - slow + 1 < result) {
+                result = i - slow + 1;
+            }
+        }
+        return result;
     }
