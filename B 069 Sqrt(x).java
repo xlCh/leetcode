@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/sqrtx/
 //x的平方根
-
+//位操作：https://leetcode.com/discuss/8897/share-my-o-log-n-solution-using-bit-manipulation
 public int mySqrt(int x) {
         if(x <= 1)
             return x;
