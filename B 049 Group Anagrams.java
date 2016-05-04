@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/anagrams/
 //将字母相同的单词归类（类别中需要按单词顺序排）
-
+//不够快
 public List<List<String>> groupAnagrams(String[] strs) {
         Arrays.sort(strs);
         Map<String, List<String>> mapping = new HashMap<String, List<String>>();
