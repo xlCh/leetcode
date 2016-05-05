@@ -1,5 +1,7 @@
+//https://leetcode.com/problems/3sum-closest/
 //数组中三个数相加 返回最接近target的值
-
+//类似3Sum
+//稍微简练一些：https://leetcode.com/discuss/16335/java-solution-with-o-n2-for-reference
  public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int result = nums[0] + nums[1] + nums[2];
