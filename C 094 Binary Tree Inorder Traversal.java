@@ -19,7 +19,7 @@ public List<Integer> inorderTraversal(TreeNode root) {
 public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
         Stack<TreeNode> stack = new Stack<TreeNode>();
-    	TreeNode cur = root, pre = null;
+    	TreeNode cur = root;
     	while(!stack.isEmpty() || cur != null) {
     		if(cur != null) {
     			stack.push(cur);
@@ -28,7 +28,6 @@ public List<Integer> inorderTraversal(TreeNode root) {
     		else {
     			TreeNode temp = stack.pop();
     			result.add(temp.val);
-    			pre = temp;
     			cur = temp.right;
     		}
     	}
