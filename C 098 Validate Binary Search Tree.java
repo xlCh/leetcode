@@ -1,5 +1,7 @@
+//https://leetcode.com/problems/validate-binary-search-tree
 //验证二叉搜索树的正确性 注意在递归过程中保存最小值和最大值
-
+//可回避long问题 https://leetcode.com/discuss/73291/1-ms-java-solution-using-recursion
+//中序遍历 迭代做法 https://leetcode.com/discuss/22234/my-java-inorder-iteration-solution
 public class Solution {
     
     public boolean isValidBST(TreeNode root) {
