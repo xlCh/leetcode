@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/ugly-number-ii/
 //寻找第n个ugly number（由2、3、5的乘积组成）
-
+//仅用一个数据结构的解法 https://leetcode.com/discuss/53225/c-one-pass-simple-solution
 public int nthUglyNumber(int n) {
         Queue<Long> q2 = new LinkedList<Long>();
         q2.offer(2l);
