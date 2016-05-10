@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/next-permutation/
 //从小到大排列数组元素的序列 下一个
-
+//https://leetcode.com/discuss/36089/sharing-clean-and-easy-understand-java-code-with-explanation
 public class Solution {
     public void nextPermutation(int[] nums) {
         int i = nums.length - 2;
