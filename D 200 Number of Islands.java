@@ -1,6 +1,7 @@
+//https://leetcode.com/problems/number-of-islands/
 //计算岛的个数
 //移除的方法 未用到并查集、BFS、DFS
-
+//一个新颖的用法：https://leetcode.com/discuss/41509/7-lines-python-14-lines-java
 public int numIslands(char[][] grid) {
         if(grid == null || grid.length == 0)
             return 0;
