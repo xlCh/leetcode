@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/range-sum-query-2d-immutable/
 //计算矩形框内数字的和
-
+//这样可以避免多写条件
 public class NumMatrix {
     
     private int sum[][];
