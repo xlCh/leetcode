@@ -1,6 +1,8 @@
+//https://leetcode.com/problems/add-and-search-word-data-structure-design/
 //添加、搜索单词的数据结构 搜索时可以使用'.'代替任意字符
 //采用前缀树
-
+//快 但代码太长了 https://leetcode.com/discuss/71690/java-19ms-solution-modified-trie-solution
+//使用Map的解法 https://leetcode.com/discuss/44509/java-solution-easy-understand
 class TrieNode {
     // Initialize your data structure here.
     boolean hasValue;
