@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/contains-duplicate-iii/
 //使用二叉搜索树（TreeSet）注意可能溢出的情况 https://leetcode.com/discuss/38177/java-o-n-lg-k-solution
+//排序方法 https://leetcode.com/discuss/52545/java-solution-without-dictionary-sort-nums-record-positions
 //桶排序 注意long的转换位置 参考https://leetcode.com/discuss/38206/ac-o-n-solution-in-java-using-buckets-with-explanation
 public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         if(k < 1 || t < 0)
